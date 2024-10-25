@@ -32,10 +32,7 @@ async function main() {
     }
     
     console.log("MongoDB Connection URL:", process.env.MONGO_URL);
-    return mongoose.connect(process.env.MONGO_URL, { 
-    useNewUrlParser: true, 
-    useUnifiedTopology: true 
-});
+    return mongoose.connect(process.env.MONGO_URL);
 }
 
 main().then(() => {
