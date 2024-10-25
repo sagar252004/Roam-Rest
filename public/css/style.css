@@ -1,0 +1,257 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex:1;
+}
+/* navbar */
+/* .navbar{
+    height: 5rem;
+    background-color: white;
+} */
+
+.fa-plane-departure{
+    color: rgb(224, 11, 11);
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222222 !important;
+    font-weight: 900;
+    
+}
+/* footer */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: #222222;
+}
+.f-info-links,
+.f-info-social, .f-info-brand {
+    width: 100%;
+    vertical-align: center;
+    justify-content: center;
+    
+}
+
+.f-info-social i{
+    margin-right: 1.3rem;
+    font-size: 1.2rem;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+/* cards */
+/* .listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text p {
+    font-weight: 400;
+}
+.listing-link{
+    text-decoration: none;
+
+}
+/* card effets */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+} */
+/* new page */
+/* .add-btn{
+    background-color:  rgb(224, 11, 11) !important;
+    border: none !important;
+} */
+/* show page */
+.show-img{
+    height: 30vh;
+}
+.btns{
+    display: flex;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+  /* Default navbar style */
+  .navbar {
+    background-color: #f8f9fa; /* Light background by default */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+
+  /* Expanded navbar background in mobile view */
+  .navbar-collapse {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-toggler.collapsed + .navbar-collapse {
+    background-color: white; /* Change background color when toggler is clicked */
+  }
+
+  /* Search button and input */
+  .search-btn {
+    background-color: transparent;
+    color: #dc3545; /* Bootstrap danger color for outline */
+    border-radius: 25px;
+  }
+
+  .search-btn:hover {
+    background-color: #dc3545; /* Red background on hover */
+    color: white;
+  }
+
+  .search-input {
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ced4da;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      background-color: white; /* Ensure the expanded menu has a white background */
+    }
+  }
+
+
+  /* Filter section styling */
+  #filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-top: 1rem;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .filter div {
+    text-align: center;
+    margin: 0 15px;
+  }
+
+  .filter a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .filter i {
+    font-size: 2rem;
+    color: #4b4b4b;
+  }
+
+  .filter p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #6c757d;
+  }
+
+  /* Toggle switch styling */
+  .tax-toggle {
+    display: flex;
+    align-items: center;
+    /* margin-left: auto; */
+  }
+
+  .tax-toggle .form-check-label {
+    font-weight: bold;
+    color: #333;
+    margin-left: 10px;
+  }
+
+  /* Listing cards section */
+  .row {
+    margin-top: 20px;
+  }
+
+  .listing-link {
+    text-decoration: none;
+  }
+
+  .listing-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+  }
+
+  .listing-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 250px;
+  }
+
+  .card-body {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .card-body p {
+    margin-bottom: 0;
+    color: #333;
+  }
+
+  .price {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  /* Responsive styling */
+  @media (max-width: 576px) {
+    .filter {
+      justify-content: center;
+    }
+
+    .filter div {
+      margin: 10px 0;
+    }
+
+    .row-cols-sm-1 .listing-card {
+      max-width: 100%;
+    }
+
+    .tax-toggle {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
