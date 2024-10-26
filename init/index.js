@@ -9,19 +9,12 @@ const { data } = require("./data");
 if (process.env.NODE_ENV != 'production') {
     require('dotenv').config();
 }
-const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');
+
 mapToken = 'pk.eyJ1IjoicmV2YW5hc2lkZGFuayIsImEiOiJjbHl1Nm84eTEwMHAwMm1wd3AzcDN5ang4In0.657X3f29PsZhwHPbBWoYtg'
 MONGO_URL = "mongodb+srv://sagarrv152:9mEsgTmRADEWW7Xm@cluster0.plqan.mongodb.net/?retryWrites=true&w=majority&appName=cluster0"
 
-
+const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');
 const geocodingClient = mbxGeocoding({ accessToken:mapToken });
-
-
-
-
-
-
-
 
 async function main() {
     try {
