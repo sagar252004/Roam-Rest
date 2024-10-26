@@ -1,11 +1,11 @@
 {
   "name": "Roam & Rest",
   "version": "1.0.0",
-  "description": "Roam & Rest redefines hospitality, offering you a seamless experience to discover and book unique living spaces. Unlike traditional rentals, Nestaway provides fully managed homes, ensuring a comfortable and hassle-free stay from the moment you book.",
-  "main": "index.js",
+  "description": "Roam & Rest redefines hospitality, offering you a seamless experience to discover and book unique living spaces.",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "build" : "npm run build",
+    "build": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sagar V",
